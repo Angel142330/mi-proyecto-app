@@ -3,11 +3,6 @@
 pipeline {
     agent any
     
-    environment {
-        // Jenkins detecta automáticamente la rama
-        BRANCH_NAME = env.GIT_BRANCH ?: env.BRANCH_NAME
-    }
-    
     stages {
         stage('Checkout') {
             steps {
