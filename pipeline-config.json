@@ -1,0 +1,16 @@
+{
+  "description": "Configuración para validaciones en rama master",
+  "kiuwanObligatorio": true,
+  "unitariasObligatorias": true,
+  "regresionObligatoria": true,
+  "exceptionKiuwan": [
+    "feature/hotfix-urgente"
+  ],
+  "exceptionUnitarias": [],
+  "exceptionRegresion": [],
+  "thresholds": {
+    "kiuwanMinScore": 70,
+    "coverageMin": 80,
+    "maxFailedTests": 0
+  }
+}
